@@ -5,10 +5,10 @@ public class WhileDemo {
     public static void main(String[] args) {
         int n = 0;   
         
-        do{           
+        while( n < 10){           
             System.out.println("Number "+n); 
             n++;
-        }while( n < 0);
+        }
     }
     
 }

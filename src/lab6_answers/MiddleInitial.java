@@ -11,17 +11,25 @@ import java.util.Scanner;
  * @author RS
  */
 public class MiddleInitial {
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your middle initial: ");
         char mi = scanner.next().toLowerCase().charAt(0);
-        
-        if(mi == 'a' || mi == 'e' || mi == 'i' || mi == 'o' || mi == 'u')
-            System.out.println("Vowel");
-        else
-            System.out.println("Consonant");
-                
+
+//        if (mi == 'a' || mi == 'e' || mi == 'i' || mi == 'o' || mi == 'u') {
+//            System.out.println("Vowel");
+//        } else {
+//            System.out.println("Consonant");
+//        }
+        switch (mi) {
+            case 'a', 'e', 'i', 'o', 'u':
+                System.out.println("Vowel");
+                break;
+            default:
+                System.out.println("Consonant.");
+        }
+
     }
-    
+
 }

@@ -13,7 +13,7 @@ public class P3Between {
         System.out.println("Enter a number: ");
         int secondNum = scanner.nextInt();
         
-        if(firstNum > secondNum){
+        if(firstNum > secondNum){ //basic swap algo
             int temp = firstNum;
             firstNum = secondNum;
             secondNum = temp;
@@ -24,6 +24,14 @@ public class P3Between {
             System.out.println(firstNum);
             
         }
+        if(firstNum > secondNum){
+            while(firstNum > secondNum-1){
+            firstNum--;
+            System.out.println(firstNum);
+            
+            }
+        }
+        
     }
     
 }

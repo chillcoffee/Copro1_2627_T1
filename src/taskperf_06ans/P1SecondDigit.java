@@ -11,6 +11,7 @@ public class P1SecondDigit {
         
         int secondDigit = number % 100 / 10;
         System.out.println(secondDigit);
+        
         if(secondDigit % 2 == 0 )
             System.out.println("The second digit of your number("+number+") is "+secondDigit+" and it is even.");
         else

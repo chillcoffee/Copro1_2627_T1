@@ -13,12 +13,13 @@ public class SampleTP {
         Random rand = new Random();
         String tobeGuessed = words[rand.nextInt(4)];
         
-        char letters[] = tobeGuessed.toCharArray(); //string method
+        char letters[] = tobeGuessed.toCharArray(); // toCharArray() is a String method
         
         for(int i=0; i<letters.length; i++){
             System.out.print("_ ");
         }
-        while(true){ //bad practice infinite loop
+        int tries = 0;
+        while(tries < 3){ 
             System.out.print("\nGuess a letter: ");
             char guess = scan.next().charAt(0);
 
@@ -28,6 +29,8 @@ public class SampleTP {
                 else
                     System.out.print("_ ");
             }
+            
+            tries++;
         }
     }
     

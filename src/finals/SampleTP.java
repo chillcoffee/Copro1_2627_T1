@@ -11,7 +11,7 @@ public class SampleTP {
         String words[] = {"microscope", "telephone", "function", "constructor"};
         
         Random rand = new Random();
-        String tobeGuessed = words[rand.nextInt(4)];
+        String tobeGuessed = words[rand.nextInt(4)]; //words[2]
         
         char letters[] = tobeGuessed.toCharArray(); // toCharArray() is a String method
         

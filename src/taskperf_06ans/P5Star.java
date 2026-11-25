@@ -4,8 +4,20 @@ package taskperf_06ans;
 import java.util.Scanner;
 
 public class P5Star {
+    
+    public P5Star(){
+        //constructor = special method the same as class name
+        //has no return type
+        //use to create new objects
+    }
+    
+    public static int add(){
+        return 0;
+    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        P5Star object = new P5Star();
+        
         System.out.println("How many lines of asterisks would you like to see? ");
         int maxLine = scanner.nextInt();
         System.out.println("Choose a shape: \n\t1. Square\n\t2. Triangle");

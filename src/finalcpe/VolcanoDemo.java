@@ -14,6 +14,7 @@ public class VolcanoDemo {
         int count = expected.length();
         String output = new String(chars, startIndex, count);
         System.out.println(output);        
+        //edited comment to show sample git manipulation
     }
     
 }

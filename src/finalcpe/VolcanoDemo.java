@@ -15,6 +15,7 @@ public class VolcanoDemo {
         String output = new String(chars, startIndex, count);
         System.out.println(output);        
         //edited comment to show sample git manipulation
+        eror 123
     }
     
 }
